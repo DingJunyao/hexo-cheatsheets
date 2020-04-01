@@ -28,21 +28,48 @@ highlight:
 ### Update
 
 ```bash
-cd themes/landscape
+cd themes/hexo-cheatsheets
 git pull
 ```
 
 ## Configuration
 
+In `/themes/hexo-cheatsheets/_config.yml`: 
+
 ```yml
-favicon: "favicon url"
+# The following are settings of the button in the upper-right corner.
+
 github: "the link the github button point to"
 githubToolTip: "Text displayed when hovering on the github button"
+githubIcon: "URL for Github icon"
+githubIconHover: "URL for Github icon on hover"
+
+footer: false # set it true to enable footer
+
+# The following are favicon settings.
+# You can visit https://realfavicongenerator.net/ for more information and generate your favicon and apply it for your site.
+
+favicon:
+  favicon: "favicon URL"
+  appleTouchIcon: "apple-touch-icon URL"
+  icon32: "favicon 32x32 URL"
+  icon16: "favicon 16x16 URL"
+  manifest: "site.webmanifest URL"
+  maskIcon: "safari-pinned-tab IRL"
+  themeColor: "#F1F3F5" # theme color
+```
+
+When you enable `footer`, you can set ICP license and police license in `/config.yml`:
+
+```yml
+ICP_license: "京ICP备12345678号-1"
+police_license: "京公网安备 12345678901234号"
 ```
 
 ## Writing
 
-when using tht code block in the markdown, please write the language. Otherwise the highlight will not work.
+When using tht code block in the markdown, please write the language. Otherwise the highlight will not work.
+
 The following example is correct.(Please **omit** the last dot, thant is a render issue)
 
 ```

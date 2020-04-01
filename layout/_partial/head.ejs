@@ -25,8 +25,35 @@
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <link rel="icon" href="<%= theme.favicon.favicon %>">
+    <!--favicons here-->
+    <% if (theme.favicon.themeColor) { %>
+      <meta name="theme-color" content="<%= theme.favicon.themeColor %>">
+    <% } %>
+    <% if (theme.favicon.appleTouchIcon) { %>
+      <link rel="apple-touch-icon" sizes="180x180" href="<%= theme.favicon.appleTouchIcon %>">
+    <% } %>
+    <% if (theme.favicon.icon32) { %>
+      <link rel="icon" type="image/png" sizes="32x32" href="<%= theme.favicon.icon32 %>">
+    <% } %>
+    <% if (theme.favicon.icon16) { %>
+      <link rel="icon" type="image/png" sizes="16x16" href="<%= theme.favicon.icon16 %>">
+    <% } %>
+    <% if (theme.favicon.manifest) { %>
+      <link rel="manifest" href="<%= theme.favicon.manifest %>">
+    <% } %>
+    <% if (theme.favicon.themeColor && theme.favicon.maskIcon) { %>
+      <link rel="mask-icon" href="<%= theme.favicon.maskIcon %>" color="<%= theme.favicon.themeColor %>">
+    <% } %>
+    <% if (theme.favicon.themeColor) { %>
+      <meta name="msapplication-TileColor" content="<%= theme.favicon.themeColor %>">
+    <% } %>
+    <!--favicons end-->
   <% } %>
   <%- css("css/style",) %>
+  <style>
+    .page-actions > .github > a::before { display: inline-block; vertical-align: middle; background: url("<%= theme.githubIcon %>") center center/16px 16px no-repeat; height: 16px; width: 16px; }
+    .page-actions > .github > a:hover::before { background-image: url("<%= theme.githubIconHover %>"); }
+  </style>
 
 </head>

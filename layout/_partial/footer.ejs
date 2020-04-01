@@ -1,11 +1,15 @@
 <footer id="footer">
-  <% if (theme.sidebar === 'bottom'){ %>
-    <%- partial('_partial/sidebar') %>
-  <% } %>
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
-      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>
+      <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>。保留所有权利。</p>
+      <% if (config.ICP_license){ %>
+        <p><a href="http://www.beian.miit.gov.cn/" target="_blank"><%= config.ICP_license %></a></p>
+      <% } %>
+      <% if (config.police_license){ %>
+        <p><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=<%- config.police_license.replace(/[^0-9]/ig,"") %>"
+          target="_blank"><%= config.police_license %></a></p>
+      <% } %>
+      <p><%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/glazec/hexo-cheatsheets" target="_blank">cheatsheets</a></p>
     </div>
   </div>
 </footer>
