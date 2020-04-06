@@ -44,8 +44,7 @@ In `/themes/hexo-cheatsheets/_config.yml`:
 
 github: "the link the github button point to"
 githubToolTip: "Text displayed when hovering on the github button"
-githubIcon: "URL for Github icon"
-githubIconHover: "URL for Github icon on hover"
+# You can modify icon in .\source\sass\2017\components\page-actions.scss
 
 footer: false # set it true to enable footer
 

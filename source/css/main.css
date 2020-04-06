@@ -1262,6 +1262,10 @@ html.WithJs.LoadDone .pages-list, html.WithJs.LoadDone
     flex: 0 1 66%;
     min-width: 300px; } }
 
+footer {
+  text-align: center;
+  padding: 40px 0; }
+
 /*
  * h2 section
  */
