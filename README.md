@@ -1,4 +1,7 @@
 # Hexo Cheatsheets Theme
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/glaze/cheatsheets)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5df0cfa1-c9c6-4898-a2cb-f99a2ac72585/deploy-status)](https://cheatsheetspreview.netlify.com/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 A new **cheatsheets** theme for Hexo.
 The design is from [devhints](http://devhints.io)
@@ -41,8 +44,7 @@ In `/themes/hexo-cheatsheets/_config.yml`:
 
 github: "the link the github button point to"
 githubToolTip: "Text displayed when hovering on the github button"
-githubIcon: "URL for Github icon"
-githubIconHover: "URL for Github icon on hover"
+# You can modify icon in .\source\sass\2017\components\page-actions.scss
 
 footer: false # set it true to enable footer
 
