@@ -28,8 +28,9 @@ $base-panel: white;
 $base-head: #111;
 $base-text: #345;
 $base-mute: #667788; // gray
-$base-inline-code: #e53935;
-$base-inline-code-background: #f1f3f5; // use in white background
+$base-code: #345;
+$base-inline-code: #678;
+$base-inline-code-background: #eff0f1; // use in white background
 
 $base-a: adjust-color(#8370bd, $lightness: -5%); // indigo
 $base-b: adjust-color(#2b72a2, $lightness: -5%); // blue

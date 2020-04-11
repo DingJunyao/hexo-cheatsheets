@@ -643,20 +643,20 @@ html.WithJs.LoadDone .pages-list, html.WithJs.LoadDone
 
 .MarkdownBody :not(pre) > code {
   padding: 1px 5px;
-  color: #e53935;
-  background-color: #fdfdfe; }
+  color: #678;
+  background-color: #fafafb; }
 
 .MarkdownBody .h3-section-list :not(pre) > code {
   padding: 1px 5px;
-  color: #e53935;
-  background-color: #f1f3f5; }
+  color: #678;
+  background-color: #eff0f1; }
 
 .MarkdownBody .h3-section > .body > pre ~ p > code,
 .MarkdownBody .h3-section > .body > ul ~ p > code,
 .MarkdownBody .h3-section > .body > ol ~ p > code,
 .MarkdownBody .h3-section > .body > iframe ~ p > code,
 .MarkdownBody .h3-section > .body > table ~ p > code {
-  background-color: #eef0f3; }
+  background-color: #ecedef; }
 
 .MarkdownBody .h3-section > .body > pre ~ ul :not(pre) > code,
 .MarkdownBody .h3-section > .body > pre ~ ol :not(pre) > code,
@@ -668,10 +668,10 @@ html.WithJs.LoadDone .pages-list, html.WithJs.LoadDone
 .MarkdownBody .h3-section > .body > iframe ~ ol :not(pre) > code,
 .MarkdownBody .h3-section > .body > table ~ ul :not(pre) > code,
 .MarkdownBody .h3-section > .body > table ~ ol :not(pre) > code {
-  background-color: #eef0f3; }
+  background-color: #ecedef; }
 
 .MarkdownBody code {
-  color: #667788;
+  color: #345;
   font-size: 1em; }
 
 .MarkdownBody pre,
