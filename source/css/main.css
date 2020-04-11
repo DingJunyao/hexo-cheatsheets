@@ -643,12 +643,12 @@ html.WithJs.LoadDone .pages-list, html.WithJs.LoadDone
 
 .MarkdownBody :not(pre) > code {
   padding: 1px 5px;
-  color: #678;
+  color: #e53935;
   background-color: #fafafb; }
 
 .MarkdownBody .h3-section-list :not(pre) > code {
   padding: 1px 5px;
-  color: #678;
+  color: #e53935;
   background-color: #eff0f1; }
 
 .MarkdownBody .h3-section > .body > pre ~ p > code,
